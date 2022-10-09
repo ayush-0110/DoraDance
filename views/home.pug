@@ -1,0 +1,42 @@
+extends base.pug
+block style 
+    style
+        include ../static/style.css
+block scripts 
+    script(src='/static/index.js')
+block content
+    
+    section#intro
+        div Welcome to Dora dance academy
+        div.small Eat Dance Sleep Repeat
+    section#missionprime
+        section#mission
+            h2 Our Mission
+            div.card 
+              h3 Dance Perfection
+              div.card-box
+                div.card-img#im1
+                  img(src="/static/logo1.png", alt="")
+                div.card-content 
+                  p This is the best dance website in the whole universe.
+            div.card 
+                h3 Dance the way you like 
+                div.card-box
+                  div.card-img
+                    img(src="/static/logo2.png", alt="")
+                  div.card-content 
+                    p This is the best dance website in the whole universe.
+            div.card 
+              h3 Expert Teaching
+              div.card-box
+                div.card-img#im3
+                  img(src="/static/logo3.png", alt="")
+                div.card-content 
+                  p This is the best dance website in the whole universe.
+    section#sponsor
+        h2 Our Sponsors
+        div#spimg
+          img(src="/static/Apple_logo.png", alt="", class="spim",id="app")
+          img(src="/static/Microsoft_logo.png", alt="", class="spim", id="ms")
+          img(src="/static/Pepsi_logo_2014.svg.png", alt="", class="spim")
+          img(src="/static/RedBullEnergyDrink.svg.png", alt="", class="spim")

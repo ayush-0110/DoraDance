@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title DDA
+    block style
+    block scripts
+  body
+    nav#navbar
+        ul 
+            div#logo
+              img(src="/static/logo.png", alt="")
+              |DDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About Us]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/contact") Contact Us]
+    block content
+    //- block foot
+    footer 
+        |Copyright © 2022 Doradanceacademy.com |  All Rights Reserved.
